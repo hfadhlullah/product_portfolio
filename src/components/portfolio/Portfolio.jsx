@@ -12,49 +12,49 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'This is the title',
+    title: 'This is the title of my portfolio project',
     github: 'https://github.com/hfadhlullah/',
     demo: 'https://thegemstownhouse.com'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'This is the title',
+    title: 'This is the title of my portfolio project',
     github: 'https://github.com/hfadhlullah/',
     demo: 'https://thegemstownhouse.com'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'This is the title',
+    title: 'This is the title of my portfolio project',
     github: 'https://github.com/hfadhlullah/',
     demo: 'https://thegemstownhouse.com'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'This is the title',
+    title: 'This is the title of my portfolio project',
     github: 'https://github.com/hfadhlullah/',
     demo: 'https://thegemstownhouse.com'
   },
   {
     id: 5,
     image: IMG5,
-    title: 'This is the title',
+    title: 'This is the title of my portfolio project',
     github: 'https://github.com/hfadhlullah/',
     demo: 'https://thegemstownhouse.com'
   },
   {
     id: 6,
     image: IMG6,
-    title: 'This is the title',
+    title: 'This is the title of my portfolio project',
     github: 'https://github.com/hfadhlullah/',
     demo: 'https://thegemstownhouse.com'
   },
   {
     id: 7,
     image: IMG7,
-    title: 'This is the title',
+    title: 'This is the title of my portfolio project',
     github: 'https://github.com/hfadhlullah/',
     demo: 'https://thegemstownhouse.com'
   },
@@ -71,7 +71,14 @@ const Portfolio = () => {
           data.map(({id,image,title,github,demo}) => {
             return (
               <article className='portfolio__item'>
-                
+                <div className="portfolio__item">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  <a href={github} className='btn' target='_blank'>Github</a>
+                  <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                </div>
               </article>
             )
           })

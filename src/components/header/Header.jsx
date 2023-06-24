@@ -10,9 +10,9 @@ const Header = () => {
     <>
     <header>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
+        <h2>Hello I'm</h2>
         <h1>Husein Fadhlullah</h1>
-        <h5 className="text-light-typewriter">I'm a&nbsp;
+        <h2 className="text-light-typewriter">I'm a&nbsp;
             <Typewriter
               options={{
                 strings: [
@@ -25,7 +25,7 @@ const Header = () => {
                 delay: 110,
               }}
             />
-          </h5>
+          </h2>
         
           <CTA />
         
