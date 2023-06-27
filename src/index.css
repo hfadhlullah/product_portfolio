@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
 
 * {
     margin: 0;
@@ -11,12 +11,12 @@
 }
 
 :root {
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-bg: #E6E6E6;
+    --color-bg-variant: #C5A880;
+    --color-primary: #532E1C;
+    --color-primary-variant: #0F0F0F;
+    --color-white: #0F0F0F;
+    --color-light: #532E1C;
 
     --transition: all 400ms ease;
 
@@ -34,18 +34,10 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background:
-      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#2c2c6c 68% 70%,#0000 72%) 10px 10px/calc(2*10px) calc(2*10px),
-      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#2c2c6c 68% 70%,#0000 72%) 10px 10px/calc(2*10px) calc(2*10px),
-      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#2c2c6c 68% 70%,#0000 72%) 0 0/calc(2*10px) calc(2*10px),
-      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#2c2c6c 68% 70%,#0000 72%) 0 0/calc(2*10px) calc(2*10px),
-      repeating-conic-gradient(#1f1f38 0 25%,#0000 0 50%) 0 0/calc(2*10px) calc(2*10px),
-      radial-gradient(#0000 66%,#2c2c6c 68% 70%,#0000 72%) 0 calc(10px/2)/10px 10px
-      #1f1f38;
 }
 
 /* =========== General Styles =========== */
@@ -59,7 +51,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h1 {
@@ -112,7 +104,7 @@ a:hover {
 }
 
 .btn:hover {
-    background: var(--color-white);
+    background: var(--color-primary);
     color: var(--color-bg);
     border-color: transparent;
 }
@@ -120,6 +112,12 @@ a:hover {
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-bg);
+}
+
+.btn-primary:hover {
+    background: var(--color-bg);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 img {

@@ -15,17 +15,23 @@ const Nav = () => {
 
   return (
     <nav>
-      <a href="#" 
-        onClick={() => setActiveNav('#')}
-        className={activeNav === '#' ? 'active' : ''}>
-        <AiOutlineHome/>
-      </a>
-      <a href="#about" 
-        onClick={() => setActiveNav('#about')}
-        className={activeNav === '#about' ? 'active' : ''}>
-        <AiOutlineUser/>
-      </a>
-      <a href="#experience" 
+      <div className='tooltip'> 
+        <span className="tooltip-text">Home</span>
+        <a href="#" 
+          onClick={() => setActiveNav('#')}
+          className={activeNav === '#' ? 'active' : ''}>
+          <AiOutlineHome/>
+        </a>
+      </div>
+      <div className='tooltip'>
+        <span className="tooltip-text">About</span>
+        <a href="#about" 
+          onClick={() => setActiveNav('#about')}
+          className={activeNav === '#about' ? 'active' : ''}>
+          <AiOutlineUser/>
+        </a>
+      </div>
+      {/* <a href="#experience" 
         onClick={() => setActiveNav('#experience')}
         className={activeNav === '#experience' ? 'active' : ''}>
         <AiOutlineHistory/>
@@ -34,12 +40,23 @@ const Nav = () => {
         onClick={() => setActiveNav('#services')}
         className={activeNav === '#services' ? 'active' : ''}>
         <AiOutlineProject/>
-      </a>
-      <a href="#contact" 
-        onClick={() => setActiveNav('#contact')}
-        className={activeNav === '#contact' ? 'active' : ''}>
-        <AiOutlineContacts/>
-      </a>
+      </a> */}
+      <div className='tooltip'>
+        <span className="tooltip-text">Portfolio</span>
+        <a href="#portfolio" 
+          onClick={() => setActiveNav('#portfolio')}
+          className={activeNav === '#portfolio' ? 'active' : ''}>
+          <AiOutlineProject/>
+        </a>
+      </div>
+      <div className="tooltip">
+        <span className="tooltip-text">Contact</span>
+        <a href="#contact" 
+          onClick={() => setActiveNav('#contact')}
+          className={activeNav === '#contact' ? 'active' : ''}>
+          <AiOutlineContacts/>
+        </a>
+      </div>
     </nav>
   )
 }

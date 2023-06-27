@@ -9,19 +9,23 @@ import Testimonials from './components/testimonials/Testimonials.jsx';
 import Contact from './components/contact/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
 
+import { BrowserRouter } from 'react-router-dom';
+
 
 const App = () => {
   return (
     <>
+    <BrowserRouter>
       <Header />
       <Nav />
       <About />
-      <Experience />
-      <Services />
+      {/* <Experience /> */}
+      {/* <Services /> */}
       <Portfolio />
       <Testimonials />
       <Contact />
       <Footer />
+    </BrowserRouter>
     </>
   )
 }

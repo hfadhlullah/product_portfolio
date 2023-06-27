@@ -4,12 +4,20 @@
     gap: 15%;
 }
 
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+p > a {
+    text-decoration: underline;
+}
+
 .about__me {
     width: 100%;
-    aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(
-        40deg,
+        30deg,
         transparent,
         var(--color-primary),
         transparent
@@ -52,16 +60,16 @@
 
 .about__icon {
     color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
 .about__card h5 {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
 }
 
 .about__card small {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--color-light);
 }
 

@@ -5,7 +5,7 @@ import { FaInstagram, FaGithub } from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>HUSEIN</a>
+      <a href="#" className='footer__logo'>Husein.</a>
 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
